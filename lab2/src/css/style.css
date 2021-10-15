@@ -1,0 +1,121 @@
+* {
+    font-family: Brush Script MT, serif;
+    color: #242424;
+}
+body {
+    margin: 0;
+}
+.line{
+    margin-top: 30px;
+    width: 80%;
+}
+
+.main section .head{
+    font-size: 30px;
+}
+
+.main section .basic_info blockquote {
+    font-size: 17px;
+}
+
+header {
+    background: linear-gradient(to top, white, #FED6BC);
+}
+
+header .cap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* vertical alignment */
+    align-items: center;
+}
+
+header .photo{
+    box-shadow: 0 6px 6px rgba(0,0,0,0.5);
+    height: 120px;
+    border-radius: 50%;
+
+}
+
+header .topnav{
+    font-size: 30px;
+}
+
+header .active {
+    padding: 0 25px;
+}
+header .topnav .active:hover {
+     color: #ddd;
+ }
+
+header .name{
+    /*margin-top: auto;*/
+}
+
+.main section{
+    display: block;
+    width: 80%;
+    margin: 50px auto 0;
+    
+}
+
+.main section .head {
+    text-indent: 1.5em; /*красная строка*/
+    text-align: justify; /*Выравнивание по ширине содержимого параграфа*/
+}
+.main section ul{
+    padding-top: 5px;
+}
+
+.main section .basic_info{
+    margin-top: 10px;
+}
+/*.main .information .records {*/
+/*    border: 2px solid grey;*/
+/*}*/
+
+.main #information small{
+    font-weight: 100;
+}
+
+.main #information #none{
+    text-decoration: line-through;
+}
+
+.main #information5 cite{
+    font-weight: 900;
+}
+
+
+footer{
+    background: linear-gradient(to bottom, white, #FED6BC);
+    /*position: relative;*/
+
+}
+
+.footerbox{
+    display: block;
+    width: 90%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footertext{
+    height:  50px;
+    line-height:  50px;
+}
+/*footer .footerbox{*/
+/*    position: relative; элемент не влияет на другие*/
+/*    height: 50px;*/
+/*    border: 5px solid red;*/
+/*}*/
+/*footer .footertext{*/
+/*    position: absolute; расположен относительно предка и
+                           и не создает пробел для других*/
+/*    top: 50%;*/
+/*    margin: -0.625em 0 0 1.5rem;*/
+
+/*}*/
+
+
+
