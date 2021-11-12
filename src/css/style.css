@@ -1,3 +1,6 @@
+.current a {
+    color: blue;
+}
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -7,11 +10,6 @@ body {
 
 .container {
     margin: auto;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
 }
 
 .line {
@@ -40,32 +38,55 @@ header .photo {
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
     height: 120px;
     border-radius: 50%;
-
+    position: fixed;
+    top: 5px;
 }
 
 header .topnav {
+    position: fixed;
     font-size: 30px;
 }
 
-header .active {
+a {
+    color: black;
+    text-decoration: none;
     margin: 0 25px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
 
-.topnav .active:hover {
+.active {
+    color: darksalmon;
+    margin: 0 25px;
+
+}
+
+.topnav a:hover {
     color: #ddd;
     text-decoration: underline;
+    opacity: 1;
+}
+
+.topnav a:active {
+    animation: background 0.55s ease-in;
+    color: thistle;
+    opacity: 1;
 }
 
 .name {
     text-transform: uppercase;
+    padding-top: 120px;
 }
+
 
 .container{
     /*border: 2px solid red;*/
 }
 
 section {
-    display: flex;
+    /*display: flex;*/
+
     flex-wrap: wrap;
     place-content: space-between center;
     margin-top: 50px;
@@ -74,16 +95,21 @@ section {
 
 .fullinfo1 {
     width: 80%;
+    margin-right: auto;
+    margin-left: auto;
     /*border: 2px solid red;*/
 }
 
 .basic_info1 {
     display: flex;
+
     justify-content: space-between;
 }
 
 .fullinfo {
     width: 80%;
+    margin-right: auto;
+    margin-left: auto;
     /*border: 2px solid red;*/
 }
 
@@ -114,6 +140,23 @@ section ul {
     text-decoration: line-through;
 }
 
+.table-line{
+    width: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 0px;
+    overflow: auto;
+    text-align: center;
+
+}
+.box{
+    line-height: 33px;
+    padding: 1em;
+}
+
 /*footer{*/
 /*    display: flex;*/
 /*    flex-wrap: wrap;*/
@@ -138,7 +181,6 @@ footer {
 }
 
 .footerbox {
-
     position: relative; /*элемент не влияет на другие*/
     height: 50px;
     /*border: 5px solid red;*/
@@ -152,12 +194,13 @@ footer {
 
 }
 
+
 @media screen and (max-width: 1280px) {
     .container {
         max-width: 970px;
     }
 
-    header .active {
+    header a {
         margin: 0 15px;
         font-size: 25px;
     }
@@ -165,6 +208,8 @@ footer {
     #information_ph img {
         max-height: 250px;
     }
+
+
 }
 
 @media screen and (max-width: 992px) {
@@ -172,7 +217,7 @@ footer {
         max-width: 750px;
     }
 
-    header .active {
+    header a {
         margin: 0 10px;
         font-size: 25px;
     }
@@ -201,14 +246,18 @@ footer {
     .fullinfo {
         width: 100%;
     }
+
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 720px){
+    .table-line{
+        width: 80%;
+    }
     .container {
         max-width: 576px;
     }
 
-    header .active {
+    header a {
         margin: 0 5px;
         font-size: 20px;
     }
@@ -216,6 +265,54 @@ footer {
     /*.photo{*/
     /*    display: none;*/
     /*}*/
+}
+
+@media screen and (max-width: 550px) {
+    .container{
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+    
+    .name{
+        font-size: 25px;
+    }
+
+    #information_ph img {
+        max-height: 230px;
+    }
+
+    .basic_info1 img:first-child {
+        display: none;
+    }
+
+    .basic_info1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .basic_info{
+        font-size: 10px;
+    }
+    
+    header a {
+        display: none;
+    }
+
+    .head{
+        font-size: 25px;
+    }
+
+    blockquote{
+        word-spacing: 0;
+        font-size: 10px;
+    }
+    .footertext{
+        font-size: 10px;
+    }
+    header .photo{
+        height: 80px;
+    }
+
 }
 
 

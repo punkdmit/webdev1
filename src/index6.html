@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -12,6 +12,7 @@
           rel="stylesheet">
     <title>Апенько Дмитрий M330122</title>
     <script src="js/script2.js"></script>
+
 </head>
 <body>
 <header class="head">
@@ -33,21 +34,28 @@
 <hr class="line">
 <main class="main">
 <div class="container">
-    <section id="information_ph">
-        <div class="fullinfo1">
+    <section id="information4">
+        <div class="fullinfo">
             <div class="head">
-                <strong>Моя фотогалерея</strong>
+                <strong>Пример моего кода</strong>
             </div>
-            <div class="basic_info1">
-                <img src="img/IMG_5046.jpg" alt="Фотография 1">
-                <img src="img/IMG_5046.jpg" alt="Фотография 2">
-                <img src="img/IMG_5046.jpg" alt="Фотография 3">
+            <div class="basic_info">
+                <pre class="list">
+                    <code>
+function checkParent (src, dest) {
+    while (src != null) {
+        if (src.tagName == dest) return src
+        src = src.parentElement
+        }
+    return null
+}
+                    </code>
+                </pre>
             </div>
         </div>
     </section>
 </div>
 </main>
-<hr class="line">
 
 </body>
 </html>
