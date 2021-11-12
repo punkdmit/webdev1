@@ -140,7 +140,7 @@ section ul {
     text-decoration: line-through;
 }
 
-.table-line{
+.liner{
     width: 100%;
 }
 
@@ -250,7 +250,7 @@ footer {
 }
 
 @media screen and (max-width: 720px){
-    .table-line{
+    .liner{
         width: 80%;
     }
     .container {
