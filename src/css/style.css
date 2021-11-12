@@ -43,7 +43,7 @@ header .photo {
 }
 
 header .topnav {
-    position: fixed;
+    /*position: fixed;*/
     font-size: 30px;
 }
 
