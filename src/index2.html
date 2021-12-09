@@ -6,12 +6,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
           rel="stylesheet">
+    <script src="js/script.js"></script>
     <title>Апенько Дмитрий M330122</title>
-    <script src="js/script2.js"></script>
+
 </head>
 <body>
 <header class="head">
@@ -20,34 +22,41 @@
             <img class="photo" src="img/IMG_C6E8AE2A93F6-1.png" alt="photo">
             <h1 class="name">Дмитрий aka CSS M33122</h1>
             <nav class="topnav">
-                <a class="" href="index2.html">Галерея</a>
-                <a class="" href="index3.html">Достижения</a>
-                <a class="" href="index4.html">Детально</a>
-                <a class="" href="index5.html">Тотем</a>
-                <a class="" href="index6.html">Код</a>
-                <a class="" href="index7.html">Цитата</a>
+                <a href="index.html" id="def">На главную</a>
             </nav>
         </div>
     </div>
 </header>
 <hr class="line">
-<main class="main">
-<div class="container">
-    <section id="information_ph">
-        <div class="fullinfo1">
-            <div class="head">
-                <strong>Моя фотогалерея</strong>
-            </div>
-            <div class="basic_info1">
-                <img src="img/IMG_5046.jpg" alt="Фотография 1">
-                <img src="img/IMG_5046.jpg" alt="Фотография 2">
-                <img src="img/IMG_5046.jpg" alt="Фотография 3">
-            </div>
-        </div>
-    </section>
-</div>
-</main>
-<hr class="line">
 
+<main id="main">
+    <div class="container">
+    <section id="information6">
+            <div class="fullinfo" id="ToDoList">
+                <form action="#">
+                    <input type="text" name="item" id="item" placeholder="I want to..."/>
+                    <span class="addBtn">Add</span>
+                </form>
+
+                <ul id="myUL">
+                    <!--<li class="checked">Make Plan</li>
+                    <li>Arrive to Singapour</li>-->
+
+                </ul>
+                <script src="js/script_lab5.js"></script>
+            </div>
+    </section>
+    </div>
+</main>
+
+<hr class="line">
+<footer class="basement">
+    <div class="container">
+        <div class="footerbox">
+            <i class="footertext">Сайт выполнен Апенько Д.С.</i>
+            <p id="time"></p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

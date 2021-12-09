@@ -50,7 +50,7 @@ header .topnav {
 a {
     color: black;
     text-decoration: none;
-    margin: 0 25px;
+    margin: 0 17px;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
@@ -180,6 +180,12 @@ footer {
     background: linear-gradient(to bottom, white, #FED6BC);
 }
 
+footer #time{
+    position: absolute;
+    top: 85%;
+    margin: -0.625em 0 0 2rem;
+}
+
 .footerbox {
     position: relative; /*элемент не влияет на другие*/
     height: 50px;
@@ -191,8 +197,8 @@ footer {
                           и не создает пробел для других*/
     top: 50%;
     margin: -0.625em 0 0 2rem;
-
 }
+
 
 
 @media screen and (max-width: 1280px) {
@@ -201,7 +207,7 @@ footer {
     }
 
     header a {
-        margin: 0 15px;
+        margin: 0 4px;
         font-size: 25px;
     }
 
@@ -268,6 +274,10 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
+    /*#item{*/
+    /*    font-size: 10px;*/
+
+    /*}*/
     .container{
         margin-left: 55px;
         margin-right: 55px;
@@ -307,6 +317,9 @@ footer {
         font-size: 10px;
     }
     .footertext{
+        font-size: 10px;
+    }
+    #time{
         font-size: 10px;
     }
     header .photo{

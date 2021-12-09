@@ -9,7 +9,7 @@
 
         for (i of sections) {
             console.log(i)
-            if (i.offsetTop-50 <= scrollPosition) {
+            if (i.offsetTop-100 <= scrollPosition) {
                 console.log(scrollPosition)
                 document.querySelector('.active').setAttribute('class', ' ');
                 document.querySelector('a[href*=' + i.id + ']').setAttribute('class', 'active');
@@ -18,6 +18,14 @@
         console.log(document.querySelector('.active').href)
 
     };
+})();
+
+(function () {
+    window.startTime = (new Date).getTime();
+    window.addEventListener('load',function () {
+
+        document.getElementById('time').innerHTML=((new Date).getTime() - window.startTime) + 'ms';
+    });
 })();
 
 
