@@ -31,7 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         navigation: {
             nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
+            prevEl: '.swiper-button-prev',
+        },
+
+        autoplay: {
+            delay: 1000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false
         }
     })
 })
