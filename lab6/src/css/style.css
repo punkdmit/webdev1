@@ -44,7 +44,7 @@ header .photo {
 
 header .topnav {
     /*position: fixed;*/
-    font-size: 30px;
+    font-size: 25px;
 }
 
 a {
@@ -199,16 +199,14 @@ footer #time{
     margin: -0.625em 0 0 2rem;
 }
 
-
-
 @media screen and (max-width: 1280px) {
     .container {
         max-width: 970px;
     }
 
     header a {
-        margin: 0 4px;
-        font-size: 25px;
+        margin: 0 3px;
+        font-size: 22px;
     }
 
     #information_ph img {

@@ -3,10 +3,11 @@
         form = document.querySelector('form'),
         item = document.querySelector('#item');
 
-    form.addEventListener("keydown", function(e) {
-        if (e.keyCode == 13) {
+    form.addEventListener("submit", function(e) {
+        // if (e.keyCode == 13) {
+        e.preventDefault();
             add()
-        }
+        // }
     })
 
     form.querySelector(".addBtn").addEventListener("click", function(e) {
